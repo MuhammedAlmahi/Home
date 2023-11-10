@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+        <title>Home</title>
+    </head>
+
+    <body>
+
+            <div class="header">
+            
+                <a href="#"><img class="Logo" src="images/Logo.png" alt=""></a>
+            
+                <nav class="navigation">
+                    <a href="#About">About Me</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="#" onclick="message()">عربي</a>
+                </nav>
+
+                <script>
+                    function message(){
+                        alert("هذه الميزة سيتم اضافتها قريبا..")
+                    }
+                </script>
+            
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+              </div>
+
+            <section class="main" id="main">
+                <h1 class="me">print("<span>Hi, I'm Muhammed</span>")</h1>
+                <p>Web developer, And a Programmer</p>
+                <div class="nav-buttons">
+                    <a href="#About"><button>About</button></a>
+                    <a href="#Projects"><button>Projects</button></a>
+                    <a href="#Contact"><button>Contact</button></a>
+                </div>
+            </section>
+
+            <section class="about" id="About">
+                <h2 class="h1-about">About me</h2>
+                <div class="about-div">
+                    Hey there! I'm <span>Muhammed Almahi</span>,
+                    web developer, and a Programmer. I have loved programming since sixth grade. 
+                    My journey begins with <a target="_blank" href="https://www.google.com/search?q=scratch">Scratch</a>, 
+                    where I learned basic concepts such as variables, loops, and functions. 
+                    Then I learned one of the most famous programming languages, <a target="_blank" href="https://www.google.com/search?q=python">Python</a>,
+                    and new concepts such as OOP (Object-oriented programming).
+                    After that I headed to web Developent. Learned about <a target="_blank" href="https://www.google.com/search?q=HTML">HTML</a>, <a target="_blank" href="https://www.google.com/search?q=CSS">CSS</a>, and <a target="_blank" href="https://www.google.com/search?q=JavaScript">Java Script</a>
+                    <br>
+                    <a href="#Projects"><button class="arrow-button"><img src="images/arrow.gif" alt=""></button></a>
+                </div>
+            </section>
+
+
+            <section class="projects" id="Projects">
+            
+                <h1 style="margin-top: 40px; color: black; font-size: 55px;">Projects</h1>
+            
+                <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
+            
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="news-slider" class="owl-carousel">
+                                <div class="post-slide" style="padding-bottom: 30px;">
+                                    <div class="post-img" style="height: 250px;">
+                                        <img src="images/rock-paper-scissor.jpg"
+                                            alt="">
+                                        <a href="https://muhammedalmahi.github.io/Rock-Paper-Scissor/" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <p>Rock Paper Sicssor</p>
+                                        </h3>
+                                        <p class="post-description">Simple Rock Paper Scissor game against the computer</p>
+                                        <a href="https://muhammedalmahi.github.io/Rock-Paper-Scissor/" class="read-more">Play!</a>
+                                    </div>
+                                </div>
+            
+                                <div class="post-slide" style="padding-bottom: 30px;">
+                                    <div class="post-img" style="height: 250px;">
+                                        <img  src="images/Calulator.png"
+                                            alt="">
+                                        <a href="https://muhammedalmahi.github.io/Calculator/" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <p>Calculator</p>
+                                        </h3>
+                                        <p class="post-description">Simple Calculator made with HTML, CSS, JavaScript</p>
+                                        <a href="https://muhammedalmahi.github.io/Calculator/" class="read-more">Play!</a>
+                                    </div>
+                                </div>
+            
+                                <div class="post-slide">               
+                                    <div class="coming-soon">
+                                        <img style="margin-right: 7px;" src="images/loading-circle.gif" alt="">
+                                        Cooming Soon
+                                    </div>
+                                </div>
+            
+                                <div class="post-slide">               
+                                    <div class="coming-soon">
+                                        <img style="margin-right: 7px;" src="images/loading-circle.gif" alt="">
+                                        Cooming Soon
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+                <script type='text/javascript'>$(document).ready(function () {
+                        $("#news-slider").owlCarousel({
+                            items: 3,
+                            itemsDesktop: [1199, 3],
+                            itemsDesktopSmall: [980, 2],
+                            itemsMobile: [600, 1],
+                            navigation: true,
+                            navigationText: ["", ""],
+                            pagination: true,
+                            autoPlay: true
+                        });
+
+                    });
+                </script>
+            
+            </section>
+            
+            <section class="contact" id="Contact">
+                <h1>Contact</h1>
+
+                <a href="mailto:m.k.almahi@gmail.com"></a>
+                    <button class="contact-button">
+                        <img src="images/gmail.svg" alt="">
+                    </button>
+                </a>
+
+                <a target="_blank" href="https://www.tiktok.com/@mohammedalmahi42">
+                    <button class="contact-button"><img src="images/tiktok.gif" alt=""></button>
+                </a>
+                
+                <a href="">
+                    <button class="contact-button"><img src="images/loading-circle.gif" alt=""></button>
+                </a>
+                
+            </section>
+
+            <script>
+                // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                  var scrolled = (winScroll / height) * 100;
+                  document.getElementById("myBar").style.width = scrolled + "%";
+                }
+            </script>
+
+    </body>
+
+</html>
