@@ -134,6 +134,19 @@ p{
     margin-bottom: 30px;
 }
 
+.main img{
+    margin-top: 0px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main img{
+        display: none;
+    }
+    .main {
+        padding-bottom: 340px
+    }
+}
 
 section.about{
     background: white;
