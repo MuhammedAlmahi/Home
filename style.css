@@ -175,14 +175,6 @@ section.about{
     line-height: 40px;
 }
 
-.arrow-button{
-    margin-top: 70px;
-    width: 75px;
-    height: 75px;
-    border-radius: 100px;
-    background-color: white;
-    border: black solid 2px;
-}
 
 section.projects{
     padding-top: 50px;
@@ -250,7 +242,12 @@ section.contact{
 }
 
 .contact-button:hover{
-    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-button img{
+    width: 60%;
 }
 
 .progress-container {
