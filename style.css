@@ -242,11 +242,37 @@ section.contact{
 }
 
 .contact-button:hover{
-    width: 100px;
-    height: 100px;
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
 }
 
 .contact-button img{
+    width: 60%;
+}
+
+.email-button{
+    padding-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 70px;
+    background-color: white;
+    border: none;
+    transition: all 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.email-button:hover{
+    margin-top: 50px;
+    height: 250px;
+    width: 200px;
+    border-radius:7px;
+}
+
+.email-button img{
     width: 60%;
 }
 
