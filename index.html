@@ -21,28 +21,24 @@
                     <a href="#About">About Me</a>
                     <a href="#Projects">Projects</a>
                     <a href="#Contact">Contact</a>
-                    <a href="#" onclick="message()">عربي</a>
+                    <a href="indexARA.html">عربي</a>
                 </nav>
 
-                <script>
-                    function message(){
-                        alert("هذه الميزة سيتم اضافتها قريبا..")
-                    }
-                </script>
             
             </div>
-            
+        
             <div class="progress-container">
                 <div class="progress-bar" id="myBar"></div>
               </div>
 
             <section class="main" id="main">
                 <h1 class="me"><span>Hi, I'm Muhammed</span></h1>
-                <p>Web developer, And a Programmer</p>
+                <p>Web developer, And a Programmer 💻</p>
                 <div class="nav-buttons">
                     <a href="#About"><button>About</button></a>
                     <a href="#Projects"><button>Projects</button></a>
                     <a href="#Contact"><button>Contact</button></a>
+                    <a href="indexARA.html"><button>عربي</button></a>
                 </div>
                 <img src="images/bird.png" alt="">
             </section>
@@ -103,14 +99,14 @@
                                 </div>
             
                                 <div class="post-slide">               
-                                    <div class="coming-soon">
+                                    <div style="width: 100%;" class="coming-soon">
                                         <img style="margin-right: 7px;" src="images/loading-circle.gif" alt="">
                                         Cooming Soon
                                     </div>
                                 </div>
             
                                 <div class="post-slide">               
-                                    <div class="coming-soon">
+                                    <div style="width: 100%;" class="coming-soon">
                                         <img style="margin-right: 7px;" src="images/loading-circle.gif" alt="">
                                         Cooming Soon
                                     </div>
@@ -143,17 +139,25 @@
             <section class="contact" id="Contact">
                 <h1>Contact</h1>
 
-                <a href="mailto:m.k.almahi@gmail.com">
-                    <button class="email-button">
-                        <img src="images/gmail.svg" alt="">
-                        <div style="font-size: 20px; font-weight: 700; color: #1e1e1e; margin-top: 15px;">m.k.almahi@gmail.com</div>
-                    </button>
-                </a>
+                <button onclick="copyEmail()" class="email-button">
+                    <img src="images/gmail.svg" alt="">
+                    <p id="my-email" style="font-size: 20px; font-weight: 700; color: #1e1e1e; margin-top: 15px;">m.k.almahi@gmail.com</p>
+                </button>
+
+                <script>
+                    function copyEmail()
+                    {
+                        var text = document.getElementById("my-email")
+
+                        navigator.clipboard.writeText(text.innerHTML)
+
+                        alert("E-mail copied to clipboard. 🎩")
+                    }
+                </script>
                 
                 <a target="_blank" href="https://www.tiktok.com/@mohammedalmahi42">
                     <button class="contact-button"><img src="images/tiktok.gif" alt=""></button>
                 </a>
-                
                 
             </section>
 
